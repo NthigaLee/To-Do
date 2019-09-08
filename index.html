@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron">
+    <h1>Create a To-Do List!</h1>
+    <h2>Instructions</h2>
+    <ul>
+        <li>Type in what you want to do</li>
+        <li>Add any relevant info as directed</li>
+        <li>Remember to remember!</li>
+    </ul>
+</div>
+<div class="container">
+<div class="well">
+   <div class="row">
+        <form id="new-todo">
+                <h2>To-do: </h2>
+       <div class="col-md-6">
+           
+           
+               <div class="form-group">
+                   <label for="new-plan">Plan</label>
+                   <input type="text" class="form-control" id="new-plan">
+               </div>
+               <div class="form-group">
+                    <label for="new-time">Time</label>
+                    <input type="time" class="form-control" id="new-time">
+                </div>
+           
+       </div>
+       <div class="col-md-6">
+            
+            
+                <div class="form-group">
+                    <label for="new-date">Date</label>
+                    <input type="date" class="form-control" id="new-date">
+                </div>
+                <div class="form-group">
+                        <label for="new-notes">Notes</label><br>
+                        
+                        <textarea name="Notes" id="new-notes" cols="60" rows="4" placeholder="Notes"></textarea>
+                    </div>
+                    
+            
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+   </div> 
+   <h2>List:</h2>
+   <ul id="to-do">
+
+   </ul>
+   <div id="show-list">
+       <h2></h2>
+       <p>Plan: <span class="plan"></span></p>
+       <p>Date: <span class="date"></span> from <span class="time"></span></p>
+       <p>Notes: <span class="notes"></span></p>
+   </div>
+</div>
+</div>
+   
+</body>
+</html>
