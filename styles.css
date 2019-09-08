@@ -2,5 +2,33 @@
     display: none;
 }
 .jumbotron{
-    
+  text-align: center;
+font-family: 'Indie Flower', cursive;
+ background-color: aqua;
+
+}
+.jumbotron h2{
+    font-family: 'Satisfy', cursive;
+}
+
+body{
+    background-color: aqua;
+}
+ul{
+    list-style: none;
+    font-family: 'Satisfy', cursive;
+    font-size: 20px; 
+}
+.well{
+    font-family: 'Caveat', cursive; 
+    font-size: 30px;
+    background-color: #31D1B1;
+    border-color: black;
+}
+#show-list{
+    font-family: 'Satisfy', cursive;
+}
+.btn{
+    background-color:#1E5A4E;
+    font-size: 20px;
 }
