@@ -5,7 +5,7 @@ function List(plan,time,date,notes){
     this.doNotes = notes;
 }
 function reset(){
-$("input#newplan").val("");
+$("input#new-plan").val("");
 }
 
 $(document).ready(function(){
