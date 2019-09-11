@@ -4,9 +4,10 @@ function List(plan,time,date,notes){
     this.doDate  = date;
     this.doNotes = notes;
 }
-function reset(){
-$("input#new-plan").val("");
+function resetForm() {
+    document.getElementById("myForm").reset();
 }
+
 
 $(document).ready(function(){
     $("form#new-todo").submit(function(event){
@@ -18,7 +19,7 @@ $(document).ready(function(){
         var userNotes = $("textarea#new-notes").val();
 
         var newList = new List(userPlan,userTime,userDate,userNotes)
-
+       
         $("ul#to-do").append("<li><span class = 'newones'>"+ newList.doPlan+", on "+ newList.doDate+"</span></li>" );
         $(".newones").last().click(function(){
             $("#show-list").fadeToggle();
@@ -31,7 +32,7 @@ $(document).ready(function(){
       
             
         });
-              $reset();
+              
 
     });
 });
