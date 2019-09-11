@@ -4,6 +4,9 @@ function List(plan,time,date,notes){
     this.doDate  = date;
     this.doNotes = notes;
 }
+function reset(){
+$("input#newplan").val("");
+}
 
 $(document).ready(function(){
     $("form#new-todo").submit(function(event){
