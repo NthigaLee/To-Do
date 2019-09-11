@@ -28,6 +28,8 @@ $(document).ready(function(){
             $(".time").text(newList.doTime);
             $(".notes").text(newList.doNotes);
             
+            $(document).reset();
+            
         });
 
     });
